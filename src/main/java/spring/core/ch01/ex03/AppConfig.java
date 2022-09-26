@@ -10,7 +10,7 @@ import spring.core.ch01.ex02.Shooter;
 @Configuration
 public class AppConfig {
 	@Bean
-	public Pistol pistol() {
+	public Pistol pistol() { //method명이 명사로 작성됨
 		return new Pistol(); //new를써줘야한다는게 단점
 	}
 	

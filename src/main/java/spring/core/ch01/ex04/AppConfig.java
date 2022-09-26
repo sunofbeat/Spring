@@ -12,7 +12,7 @@ import spring.core.ch01.ex02.Shooter;
 @Import({Config1.class, Config2.class})//configuration을 통합
 public class AppConfig {
 	@Autowired private Gun pistol; //멤버변수선언하고 오토와이어 선언하면 컨테이너는 해당빈을 호출
-	@Autowired private Gun rifle;
+	@Autowired private Gun rifle; //DI는 @Autowired로 
 	
 	@Bean
 	public Shooter shooter1() {
